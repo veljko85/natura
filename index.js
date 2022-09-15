@@ -687,10 +687,7 @@ var createScene = function () {
       // //OTHER MATERIAL TURN OFF
       // result.meshes[11].isVisible = result.meshes[12].isVisible = false;
       //ADD WOOD MATERIALS
-      woodMaterials.push(
-        scene.getMaterialByID("Wood-Velja"),
-        scene.getMaterialByID("Wood-Velja.001")
-      );
+      woodMaterials.push(scene.getMaterialByID("Wood-Velja"));
       //METAL PART TO HOLD WOOD POST
       let leftMetalPart = result.meshes[10];
       leftMetalPart.material = rootMat;
@@ -1047,7 +1044,7 @@ var createScene = function () {
         fence.rotation.y = rotY;
 
         wholeFences.push(fence);
-
+        woodMaterials.push(scene.getMaterialByID("Wood-Velja.001"));
         // for (let i = 0; i < result.meshes.length; i++) {
         //   console.log(i, result.meshes[i].name);
         // }
